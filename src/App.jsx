@@ -1,5 +1,6 @@
 import {createTheme, ThemeProvider} from "@mui/system";
 import {Route, Router, Routes} from "react-router";
+import styles from "./app.module.css";
 
 const bookifyMuiTheme = createTheme({
     palette: {
@@ -15,11 +16,21 @@ function App() {
 
     return (
         <ThemeProvider theme={bookifyMuiTheme}>
+            <div className={styles.header}>
+                PLACEHOLDER HEADER
+            </div>
             <Routes>
-                <Route path="/venues/" element={}>
-
-                </Route>
+                <Route path="/" elelemnt={{
+                }}/>
+                <Route
+                    path="/..."
+                    element={
+                    }
+                />
             </Routes>
+            <div className={styles.footer}>
+                PLACEHOLDER FOOTER
+            </div>
         </ThemeProvider>
     )
 }
