@@ -1,7 +1,9 @@
-.header{
-
+.header {
+  background-color: red;
+  height: 30px;
 }
 
-.footer{
-    
+.footer {
+  background-color: red;
+  height: 30px;
 }
