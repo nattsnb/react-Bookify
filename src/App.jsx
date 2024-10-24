@@ -3,18 +3,20 @@ import { Route, Router, Routes } from "react-router";
 import styles from "./app.module.css";
 import { Results } from "./pages/Results/index.jsx";
 import { Venue } from "./pages/Venue/index.jsx";
-import { NavBar } from "./components/NavBar/index.jsx";
-import { Footer } from "./components/Footer/index.jsx";
 import { LayOut } from "./components/LayOut/index.jsx";
+import "./poppins.css";
+import { white } from "mui/source/styles/colors.js";
 
-const bookifyMuiTheme = createTheme({
-  palette: {
-    primary: {
-      main: "#67AA92",
-      contrastText: "#FFFFFF",
-    },
+const bookifyMuiTheme = createTheme();
+
+bookifyMuiTheme.typography = {};
+
+bookifyMuiTheme.palette = {
+  primary: {
+    main: "#67AA92",
+    contrastText: "#67AA92",
   },
-});
+};
 
 export function App() {
   return (
