@@ -1,0 +1,19 @@
+.wrapper {
+  background-color: #f8f5f1;
+  background-image: url("../../images/gradient.png");
+  height: 52.15vw;
+  position: relative;
+}
+
+.logo {
+  height: 40vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.vector {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
