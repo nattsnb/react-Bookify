@@ -9,7 +9,9 @@ import { white } from "mui/source/styles/colors.js";
 
 const bookifyMuiTheme = createTheme();
 
-bookifyMuiTheme.typography = {};
+bookifyMuiTheme.typography = {
+  fontFamily: "Poppins",
+};
 
 bookifyMuiTheme.palette = {
   primary: {
