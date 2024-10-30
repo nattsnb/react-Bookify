@@ -1,28 +1,15 @@
-import { createTheme, ThemeProvider } from "@mui/system";
+import { ThemeProvider } from "@mui/system";
 import { Route, Router, Routes } from "react-router";
 import styles from "./app.module.css";
 import { Results } from "./pages/Results/index.jsx";
 import { Venue } from "./pages/Venue/index.jsx";
 import { LayOut } from "./components/LayOut/index.jsx";
 import "./poppins.css";
-import { white } from "mui/source/styles/colors.js";
-
-const bookifyMuiTheme = createTheme();
-
-bookifyMuiTheme.typography = {
-  fontFamily: "Poppins",
-};
-
-bookifyMuiTheme.palette = {
-  primary: {
-    main: "#67AA92",
-    contrastText: "#67AA92",
-  },
-};
+import theme from "./theme";
 
 export function App() {
   return (
-    <ThemeProvider theme={bookifyMuiTheme}>
+    <ThemeProvider theme={theme}>
       <LayOut>
         <Routes>
           <Route path="/results/" element={<Results />} exact />
