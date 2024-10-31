@@ -1,11 +1,13 @@
 .navBar {
-  background-color: var(--primary-main);
+  background-color: var(--background-gray);
   height: 3.89vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 8.3%;
+  padding-right: 8.3%;
+  box-shadow: 0 0 0.8vw var(--secondary-light);
+  margin-bottom: 0.8vw;
 }
 
 .homeLinkContainer {
