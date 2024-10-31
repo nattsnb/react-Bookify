@@ -25,7 +25,14 @@ const theme = createTheme({
       fontSize: "2.8vw",
       fontWeight: 100,
       textTransform: "uppercase",
-      color: "#000000",
+    },
+    link: {
+      fontSize: "1.2vw",
+      fontWeight: 400,
+    },
+    highlightedLink: {
+      fontSize: "1.2vw",
+      fontWeight: 600,
     },
   },
   spacing: 8,
@@ -34,6 +41,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           textDecoration: "none",
+          color: "#000000",
         },
       },
     },

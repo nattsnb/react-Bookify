@@ -10,14 +10,10 @@
   margin-bottom: 0.8vw;
 }
 
-.homeLinkContainer {
-}
-
-.homeLink {
-}
-
-.homeLinkTypo {
-}
-
 .linksList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 42vw;
 }

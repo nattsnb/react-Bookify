@@ -33,7 +33,7 @@
 }
 
 .welcomeMessage {
-  position: fixed;
+  position: absolute;
   right: 8%;
   transform: translateY(-50%);
   padding-top: 27%;
