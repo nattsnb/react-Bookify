@@ -30,12 +30,13 @@
 
 .vector {
   width: 100%;
-  height: auto;
+  position: absolute;
+  left: 0;
 }
 
 .welcomeMessage {
   position: fixed;
   right: 8%;
-  top: 22%;
   transform: translateY(-50%);
+  padding-top: 33%;
 }
