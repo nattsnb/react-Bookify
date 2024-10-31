@@ -4,7 +4,7 @@ import { Banner } from "../../components/Banner/index.jsx";
 export function Results() {
   return (
     <div>
-      <Banner size={"l"}></Banner>
+      <Banner size={"m"}></Banner>
     </div>
   );
 }

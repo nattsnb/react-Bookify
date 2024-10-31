@@ -19,11 +19,23 @@ const theme = createTheme({
       fontWeight: 600,
       textAlign: "right",
     },
-    body1: {
-      fontSize: "1rem",
+    homeLink: {
+      fontSize: "2.8vw",
+      fontWeight: 100,
+      textTransform: "uppercase",
+      color: "#000000",
     },
   },
-  spacing: 8, // baza odstępów, np. padding/margin
+  spacing: 8,
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: "none",
+        },
+      },
+    },
+  },
 });
 
 export default theme;

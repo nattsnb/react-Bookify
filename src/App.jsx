@@ -6,10 +6,12 @@ import { Venue } from "./pages/Venue/index.jsx";
 import { LayOut } from "./components/LayOut/index.jsx";
 import "./poppins.css";
 import theme from "./theme";
+import { CssBaseline } from "@mui/material";
 
 export function App() {
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <LayOut>
         <Routes>
           <Route path="/results/" element={<Results />} exact />
