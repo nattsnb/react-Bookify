@@ -2,6 +2,8 @@ import styles from "./searchBar.module.css";
 import { InputAdornment, TextField } from "@mui/material";
 import * as PropTypes from "prop-types";
 import { Search } from "@mui/icons-material";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import RemoveIcon from "@mui/icons-material/Remove";
 
 const StyledTextField = ({ placeholder, icon }) => {
   return (
@@ -47,17 +49,17 @@ const textFieldsDataArray = [
   },
   {
     id: 2,
-    placeholder: "venue type",
-    icon: <Search className={styles.icon} />,
+    placeholder: "date",
+    icon: <CalendarMonthIcon className={styles.icon} />,
   },
   {
     id: 3,
-    placeholder: "date",
-    icon: <Search className={styles.icon} />,
+    placeholder: "guests",
+    icon: <RemoveIcon className={styles.icon} />,
   },
   {
     id: 4,
-    placeholder: "guests",
+    placeholder: "venue type",
     icon: <Search className={styles.icon} />,
   },
 ];
