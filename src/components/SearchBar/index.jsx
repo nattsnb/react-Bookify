@@ -4,8 +4,9 @@ import * as PropTypes from "prop-types";
 import { Search } from "@mui/icons-material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import RemoveIcon from "@mui/icons-material/Remove";
+import AddIcon from "@mui/icons-material/Add";
 
-const StyledTextField = ({ placeholder, icon }) => {
+const StyledTextField = ({ placeholder, icon, endAdornmentClass }) => {
   return (
     <TextField
       variant="outlined"
@@ -31,6 +32,11 @@ const StyledTextField = ({ placeholder, icon }) => {
               borderColor: "primary.main",
             },
           },
+          endAdornment: (
+            <InputAdornment position="end">
+              <AddIcon className={endAdornmentClass} />
+            </InputAdornment>
+          ),
         },
       }}
     />
@@ -41,26 +47,31 @@ const textFieldsDataArray = [
     id: 0,
     placeholder: "localization",
     icon: <Search className={styles.icon} />,
+    endAdornmentClass: styles.hiddenIcon,
   },
   {
     id: 1,
     placeholder: "occasion",
     icon: <Search className={styles.icon} />,
+    endAdornmentClass: styles.hiddenIcon,
   },
   {
     id: 2,
     placeholder: "date",
     icon: <CalendarMonthIcon className={styles.icon} />,
+    endAdornmentClass: styles.hiddenIcon,
   },
   {
     id: 3,
     placeholder: "guests",
     icon: <RemoveIcon className={styles.icon} />,
+    endAdornmentClass: styles.icon,
   },
   {
     id: 4,
     placeholder: "venue type",
     icon: <Search className={styles.icon} />,
+    endAdornmentClass: styles.hiddenIcon,
   },
 ];
 export function SearchBar() {
@@ -71,6 +82,7 @@ export function SearchBar() {
           key={dataEntry.id}
           placeholder={dataEntry.placeholder}
           icon={dataEntry.icon}
+          endAdornmentClass={dataEntry.endAdornmentClass}
         ></StyledTextField>
       ))}
     </div>
