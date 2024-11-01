@@ -1,7 +1,7 @@
 import styles from "./searchBar.module.css";
 import { InputAdornment, TextField } from "@mui/material";
 import * as PropTypes from "prop-types";
-import { Search } from '@mui/icons-material';
+import { Search } from "@mui/icons-material";
 
 const StyledTextField = ({ placeholder, icon }) => {
   return (
@@ -11,9 +11,7 @@ const StyledTextField = ({ placeholder, icon }) => {
       slotProps={{
         input: {
           startAdornment: (
-            <InputAdornment position="start">
-                {icon}
-            </InputAdornment>
+            <InputAdornment position="start">{icon}</InputAdornment>
           ),
           sx: {
             width: "16vw",
@@ -36,15 +34,43 @@ const StyledTextField = ({ placeholder, icon }) => {
     />
   );
 };
-
+const textFieldsDataArray = [
+  {
+    id: 0,
+    placeholder: "localization",
+    icon: <Search className={styles.icon} />,
+  },
+  {
+    id: 1,
+    placeholder: "occasion",
+    icon: <Search className={styles.icon} />,
+  },
+  {
+    id: 2,
+    placeholder: "venue type",
+    icon: <Search className={styles.icon} />,
+  },
+  {
+    id: 3,
+    placeholder: "date",
+    icon: <Search className={styles.icon} />,
+  },
+  {
+    id: 4,
+    placeholder: "guests",
+    icon: <Search className={styles.icon} />,
+  },
+];
 export function SearchBar() {
   return (
     <div className={styles.searchBarWrapper}>
-      <StyledTextField placeholder="loclization" icon={Search} />
-      <StyledTextField placeholder="occasion" icon="search" />
-      <StyledTextField placeholder="venue type" icon="search" />
-      <StyledTextField placeholder="date" icon="search" />
-      <StyledTextField placeholder="guests" icon="search" />
+      {textFieldsDataArray.map((dataEntry) => (
+        <StyledTextField
+          key={dataEntry.id}
+          placeholder={dataEntry.placeholder}
+          icon={dataEntry.icon}
+        ></StyledTextField>
+      ))}
     </div>
   );
 }
