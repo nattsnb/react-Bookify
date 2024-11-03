@@ -3,6 +3,7 @@ import logoImage from "../../images/logo.png";
 import vectorImage from "../../images/vector.png";
 import Typography from "@mui/material/Typography";
 import { SearchBar } from "../SearchBar/index.jsx";
+import { LandingPageLink } from "../LandingPageLink/index.jsx";
 
 export function Banner({ size }) {
   let bannerHeight = 0;
@@ -27,7 +28,9 @@ export function Banner({ size }) {
         <Typography className={styles.welcomeMessage} variant="h1">
           Find your place and experience it together.
         </Typography>
-        <SearchBar className={styles.searchBar}></SearchBar>
+        <SearchBar></SearchBar>
+        <LandingPageLink></LandingPageLink>
+        {/*<SearchButton></SearchButton>*/}
       </div>
     </div>
   );

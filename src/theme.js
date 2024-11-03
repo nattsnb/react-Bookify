@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+import { palette } from "@mui/system";
 
 const theme = createTheme({
   palette: {
@@ -33,6 +34,11 @@ const theme = createTheme({
     boldLink: {
       fontSize: "1.2vw",
       fontWeight: 600,
+    },
+    landingPageLink: {
+      fontSize: "1.4vw",
+      fontWeight: 600,
+      color: "#67AA92",
     },
   },
   spacing: 8,
