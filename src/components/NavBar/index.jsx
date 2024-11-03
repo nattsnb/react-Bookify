@@ -11,7 +11,20 @@ export function NavBar() {
         </Link>
       </div>
       <div className={styles.linksList}>
-        <Link href={"/"} variant="link">
+        <Link
+          href={"/"}
+          sx={{
+            fontWeight: "500",
+            color: "#595959",
+            textShadow: `
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000,
+      5px 5px 5px #595959`,
+          }}
+          variant="link"
+        >
           about us
         </Link>
         <Link href={"/"} variant="link">
@@ -20,7 +33,7 @@ export function NavBar() {
         <Link href={"/"} variant="link">
           start hosting
         </Link>
-        <Link href={"/"} sx={{ color: "#67AA92" }} variant="highlightedLink">
+        <Link href={"/"} sx={{ color: "#67AA92" }} variant="boldLink">
           login
         </Link>
       </div>

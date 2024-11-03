@@ -30,7 +30,7 @@ const theme = createTheme({
       fontSize: "1.2vw",
       fontWeight: 400,
     },
-    highlightedLink: {
+    boldLink: {
       fontSize: "1.2vw",
       fontWeight: 600,
     },
