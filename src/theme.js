@@ -80,6 +80,24 @@ const theme = createTheme({
         },
       },
     },
+    MuiListItemText: {
+      styleOverrides: {
+        primary: {
+          fontSize: "1.2vw",
+          paddingLeft: "1.3vw",
+          paddingTop: "1.2vw",
+          paddingBottom: "1.2vw",
+        },
+      },
+    },
+    MuiListItemIcon: {
+      styleOverrides: {
+        primary: {
+          fontSize: "8vw",
+          color: "#818181",
+        },
+      },
+    },
   },
 });
 

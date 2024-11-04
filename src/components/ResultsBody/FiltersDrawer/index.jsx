@@ -13,43 +13,34 @@ import {
   Toolbar,
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Box } from "@mui/system";
 
 export function FiltersDrawer() {
+  const arrayOfFilters = [
+    { id: 0, name: "price range" },
+    { id: 1, name: "amenities" },
+    { id: 2, name: "room amenities" },
+    { id: 3, name: "neighbourhoods" },
+    { id: 4, name: "handicap accessibility" },
+  ];
   return (
     <div className={styles.wrapper}>
-      <MenuList>
-        <Toolbar className={styles.toolbar}>
-          <Typography>reset</Typography>
-          <Typography>filters</Typography>
-          <Typography>reset</Typography>
-        </Toolbar>
-        <MenuItem>
-          <ListItemIcon>
-            <ContentCut fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Cut</ListItemText>
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
-            ⌘X
-          </Typography>
-        </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <ContentCopy fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Copy</ListItemText>
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
-            ⌘C
-          </Typography>
-        </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <ContentPaste fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Paste</ListItemText>
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
-            ⌘V
-          </Typography>
-        </MenuItem>
+      <Toolbar className={styles.toolbar}>
+        <Typography>reset</Typography>
+        <Typography>filters</Typography>
+        <Typography>reset</Typography>
+      </Toolbar>
+      <Box className={styles.menuListBox}></Box>
+      <MenuList className={styles.menuList}>
+        {arrayOfFilters.map((filter) => (
+          <MenuItem key={filter.id}>
+            <ListItemText>{filter.name}</ListItemText>
+            <ListItemIcon>
+              <ExpandMoreIcon fontSize="small" />
+            </ListItemIcon>
+          </MenuItem>
+        ))}
       </MenuList>
     </div>
   );
