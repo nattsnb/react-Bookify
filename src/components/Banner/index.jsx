@@ -4,7 +4,7 @@ import vectorImage from "../../images/vector.png";
 import Typography from "@mui/material/Typography";
 import { SearchBar } from "../SearchBar/index.jsx";
 import { LandingPageLink } from "../LandingPageLink/index.jsx";
-import {SearchButton} from "../SearchButton/index.jsx";
+import { SearchButton } from "../SearchButton/index.jsx";
 
 export function Banner({ size }) {
   let bannerHeight = 0;

@@ -1,12 +1,12 @@
-.searchButtonWrapper{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
+.searchButtonWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .button {
-        width: 15.3vw;
-        height: 4vh;
+  width: 15.3vw;
+  height: 4vh;
 }

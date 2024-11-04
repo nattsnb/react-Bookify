@@ -40,6 +40,15 @@ const theme = createTheme({
       fontWeight: 600,
       color: "#67AA92",
     },
+    aboutUsLink: {
+      fontWeight: 400,
+      color: "#595959",
+      WebkitTextStroke: "1px black",
+      WebkitBackgroundClip: "text",
+      backgroundClip: "text",
+      textShadow: "1px 2px 4px rgba(0, 0, 0, 0.6)",
+    },
+
     confirmSearchButton: {
       fontSize: "1.2vw",
       fontWeight: 500,
@@ -60,7 +69,7 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         contained: {
-          borderRadius: '20px',
+          borderRadius: "20px",
         },
       },
     },

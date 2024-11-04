@@ -11,21 +11,8 @@ export function NavBar() {
         </Link>
       </div>
       <div className={styles.linksList}>
-        <Link
-          href={"/"}
-          sx={{
-            fontWeight: "500",
-            color: "#595959",
-            textShadow: `
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000,
-      5px 5px 5px #595959`,
-          }}
-          variant="link"
-        >
-          about us
+        <Link href={"/"} variant="link">
+          <Typography variant="aboutUsLink">about us</Typography>
         </Link>
         <Link href={"/"} variant="link">
           your favourites
