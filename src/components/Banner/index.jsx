@@ -33,6 +33,7 @@ export function Banner({ size }) {
         <LandingPageLink></LandingPageLink>
         <SearchButton></SearchButton>/
       </div>
+      <div className={styles.divider}></div>
     </div>
   );
 }
