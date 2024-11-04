@@ -29,9 +29,15 @@ export function Banner({ size }) {
         <Typography className={styles.welcomeMessage} variant="h1">
           Find your place and experience it together.
         </Typography>
-        <SearchBar></SearchBar>
-        <LandingPageLink></LandingPageLink>
-        <SearchButton></SearchButton>/
+        {bannerHeight === "36.38vw" ? (
+          <>
+            <SearchBar></SearchBar>
+            <LandingPageLink></LandingPageLink>
+            <SearchButton></SearchButton>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
       <div className={styles.divider}></div>
     </div>
