@@ -4,7 +4,7 @@ import { ResultsBody } from "../../components/ResultsBody/index.jsx";
 
 export function Results() {
   return (
-    <div>
+    <div className={styles.container}>
       <Banner size={"m"}></Banner>
       <ResultsBody></ResultsBody>
     </div>
