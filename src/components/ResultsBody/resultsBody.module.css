@@ -1,0 +1,15 @@
+.container {
+  padding-left: 8.2vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.filtersWrapper {
+  background-color: red;
+  width: 19.65vw;
+}
+
+.resultsWrapper {
+  background-color: hotpink;
+  width: 100%;
+}
