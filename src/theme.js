@@ -40,6 +40,12 @@ const theme = createTheme({
       fontWeight: 600,
       color: "#67AA92",
     },
+    confirmSearchButton: {
+      fontSize: "1.2vw",
+      fontWeight: 500,
+      color: "#FFFFFF",
+      textTransform: "none",
+    },
   },
   spacing: 8,
   components: {
@@ -48,6 +54,13 @@ const theme = createTheme({
         root: {
           textDecoration: "none",
           color: "#000000",
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        contained: {
+          borderRadius: '20px',
         },
       },
     },
