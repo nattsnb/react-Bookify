@@ -1,5 +1,6 @@
 import styles from "./resultsBody.module.css";
 import { FiltersDrawer } from "./FiltersDrawer/index.jsx";
+import { ResultLinks } from "./ResultsLinks/index.jsx";
 
 export function ResultsBody() {
   return (
@@ -7,7 +8,9 @@ export function ResultsBody() {
       <div className={styles.filtersWrapper}>
         <FiltersDrawer></FiltersDrawer>
       </div>
-      <div className={styles.resultsWrapper}>results</div>
+      <div className={styles.resultsWrapper}>
+        <ResultLinks></ResultLinks>
+      </div>
     </div>
   );
 }
