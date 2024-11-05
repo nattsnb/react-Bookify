@@ -48,7 +48,6 @@ const theme = createTheme({
       backgroundClip: "text",
       textShadow: "1px 2px 4px rgba(0, 0, 0, 0.6)",
     },
-
     confirmSearchButton: {
       fontSize: "1.2vw",
       fontWeight: 500,
