@@ -2,3 +2,21 @@
   background-color: hotpink;
   height: 600px;
 }
+.toolbar{
+  height: 2.77vw;
+  margin-bottom: 1.33vw;
+  background-color: darkolivegreen;
+}
+.pagination{
+  background-color: plum;
+  padding-bottom: 6.38vw;
+}
+.container{
+  height: 2.77vw;
+}
+.cardsWrapper{
+  background-color: indianred;
+  height: max-content;
+  margin-bottom: 6.38vw;
+}
+
