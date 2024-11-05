@@ -46,6 +46,12 @@ const theme = createTheme({
       color: "#67AA92",
       textTransform: "none",
     },
+    landingPageLink: {
+      fontSize: "1.4vw",
+      fontWeight: 600,
+      color: "#67AA92",
+      marginTop: "1.4vw",
+    },
     aboutUsLink: {
       fontWeight: 400,
       color: "#595959",

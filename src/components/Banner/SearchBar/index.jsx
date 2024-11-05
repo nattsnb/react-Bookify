@@ -1,79 +1,87 @@
 import styles from "./searchBar.module.css";
 import { InputAdornment, TextField } from "@mui/material";
-import * as PropTypes from "prop-types";
 import { Search } from "@mui/icons-material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 
-const StyledTextField = ({ placeholder, icon, endAdornmentClass }) => {
+const StyledTextField = ({
+  placeholder,
+  icon,
+  endAdornmentClass,
+  placeholderAlign,
+}) => {
   return (
     <TextField
       variant="outlined"
       placeholder={placeholder}
-      slotProps={{
-        input: {
-          startAdornment: (
-            <InputAdornment position="start">{icon}</InputAdornment>
-          ),
-          sx: {
-            width: "16vw",
-            height: "3.5vw",
-            backgroundColor: "background.default",
-            borderRadius: "25px",
-            fontSize: "1.2vw",
-            "& fieldset": {
-              borderColor: "grey.400",
-            },
-            "&:hover fieldset": {
-              borderColor: "grey.600",
-            },
-            "&.Mui-focused fieldset": {
-              borderColor: "primary.main",
-            },
-          },
-          endAdornment: (
-            <InputAdornment position="end">
-              <AddIcon className={endAdornmentClass} />
-            </InputAdornment>
-          ),
+      InputProps={{
+        startAdornment: (
+          <InputAdornment position="start">{icon}</InputAdornment>
+        ),
+        endAdornment: (
+          <InputAdornment position="end">
+            <AddIcon className={endAdornmentClass} />
+          </InputAdornment>
+        ),
+      }}
+      sx={{
+        width: "16vw",
+        height: "3.8vw",
+        padding: 0,
+        justifyContent: "center",
+        backgroundColor: "background.default",
+        borderRadius: "15px",
+        fontSize: "1.2vw",
+        "& input": {
+          textAlign: placeholderAlign, // Dynamically align placeholder
+        },
+        "& .MuiOutlinedInput-notchedOutline": {
+          border: "none", // Remove the border
         },
       }}
     />
   );
 };
+
 const textFieldsDataArray = [
   {
     id: 0,
     placeholder: "localization",
+    placeholderAlign: "left",
     icon: <Search className={styles.icon} />,
     endAdornmentClass: styles.hiddenIcon,
   },
   {
     id: 1,
     placeholder: "occasion",
+    placeholderAlign: "left",
     icon: <Search className={styles.icon} />,
     endAdornmentClass: styles.hiddenIcon,
   },
   {
     id: 2,
     placeholder: "date",
+    placeholderAlign: "left",
     icon: <CalendarMonthIcon className={styles.icon} />,
     endAdornmentClass: styles.hiddenIcon,
   },
   {
     id: 3,
     placeholder: "guests",
+    placeholderAlign: "center",
     icon: <RemoveIcon className={styles.icon} />,
     endAdornmentClass: styles.icon,
   },
   {
     id: 4,
     placeholder: "venue type",
+    placeholderAlign: "left",
     icon: <Search className={styles.icon} />,
     endAdornmentClass: styles.hiddenIcon,
   },
 ];
+
 export function SearchBar() {
   return (
     <div className={styles.searchBarWrapper}>
@@ -83,7 +91,8 @@ export function SearchBar() {
           placeholder={dataEntry.placeholder}
           icon={dataEntry.icon}
           endAdornmentClass={dataEntry.endAdornmentClass}
-        ></StyledTextField>
+          placeholderAlign={dataEntry.placeholderAlign} // Pass alignment setting
+        />
       ))}
     </div>
   );

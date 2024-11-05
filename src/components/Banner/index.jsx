@@ -31,7 +31,7 @@ export function Banner({ size }) {
         </Typography>
         {bannerHeight === "36.38vw" ? (
           <>
-            <SearchBar></SearchBar>
+            <SearchBar className={styles.searchBar}></SearchBar>
             <LandingPageLink></LandingPageLink>
             <SearchButton></SearchButton>
           </>
