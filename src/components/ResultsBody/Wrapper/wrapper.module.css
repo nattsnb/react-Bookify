@@ -3,10 +3,29 @@
 .toolbar {
   height: 2.77vw;
   margin-bottom: 1.33vw;
-  background-color: darkolivegreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .cardsWrapper {
   height: max-content;
   margin-bottom: 6.38vw;
+}
+
+.paginationSettingsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-left: 1vw;
+}
+
+.textField {
+  width: 5.55vw;
+  color: var(--primary-main);
+}
+
+.textFieldBox {
+  margin-right: 1.33vw;
+  margin-left: 1.33vw;
 }

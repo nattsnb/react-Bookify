@@ -4,11 +4,9 @@ import { Pagination, Box, Card, Typography } from "@mui/material";
 
 const items = Array.from({ length: 100 }, (_, i) => `Item ${i + 1}`); // Example items
 
-export const PaginatedList = () => {
-  const itemsPerPage = 9;
+export const PaginatedList = ({ numberOfCards }) => {
+  const itemsPerPage = numberOfCards;
   const [page, setPage] = useState(1);
-
-  // Calculate the items to display based on the current page
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const displayedItems = items.slice(startIndex, endIndex);
