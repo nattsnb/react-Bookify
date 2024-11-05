@@ -13,6 +13,7 @@
 .wrapper {
   background-color: var(--backgroung-gray);
   box-shadow: 0 0 0.4vw var(--secondary-light);
+  height: 100%;
 }
 
 .menuListBox {
