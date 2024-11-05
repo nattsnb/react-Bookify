@@ -1,11 +1,5 @@
 import styles from "./filtersDrawer.module.css";
 import {
-  Cloud,
-  ContentCopy,
-  ContentCut,
-  ContentPaste,
-} from "@mui/icons-material";
-import {
   ListItemIcon,
   ListItemText,
   MenuItem,
