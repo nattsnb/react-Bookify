@@ -35,10 +35,11 @@ const theme = createTheme({
       fontSize: "1.2vw",
       fontWeight: 600,
     },
-    landingPageLink: {
+    sortButton: {
       fontSize: "1.4vw",
-      fontWeight: 600,
+      fontWeight: 500,
       color: "#67AA92",
+      textTransform: "none",
     },
     aboutUsLink: {
       fontWeight: 400,

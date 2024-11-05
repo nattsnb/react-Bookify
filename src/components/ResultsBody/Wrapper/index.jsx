@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { PaginatedList } from "../PaginatedList/index.jsx";
 import React, { useState } from "react";
+import Typography from "@mui/material/Typography";
 
 export function Wrapper({ arrayOfSMLinks }) {
   const arrayOfPaginationSettings = [6, 18, 36];
@@ -58,7 +59,9 @@ export function Wrapper({ arrayOfSMLinks }) {
           <Box>on the page</Box>
         </div>
         <div className={styles.sortButtonWrapper}>
-          <Button>Sort</Button>
+          <Button>
+            <Typography variant="sortButton">sort</Typography>
+          </Button>
         </div>
       </div>
       <div className={styles.cardsWrapper}>
