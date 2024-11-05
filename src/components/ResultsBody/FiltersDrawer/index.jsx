@@ -1,5 +1,6 @@
 import styles from "./filtersDrawer.module.css";
 import {
+  Button,
   ListItemIcon,
   ListItemText,
   MenuItem,
@@ -21,9 +22,13 @@ export function FiltersDrawer() {
   return (
     <div className={styles.wrapper}>
       <Toolbar className={styles.toolbar}>
-        <Typography>reset</Typography>
-        <Typography>filters</Typography>
-        <Typography>reset</Typography>
+        <Typography className={styles.hiddenText}>reset</Typography>
+
+        <Typography variant="filterTitle">filters</Typography>
+
+        <Button>
+          <Typography variant="sortButton">reset</Typography>
+        </Button>
       </Toolbar>
       <Box className={styles.menuListBox}></Box>
       <MenuList className={styles.menuList}>

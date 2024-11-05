@@ -35,6 +35,11 @@ const theme = createTheme({
       fontSize: "1.2vw",
       fontWeight: 600,
     },
+    filterTitle: {
+      textTransform: "uppercase",
+      fontSize: "1.6vw",
+      fontWeight: 400,
+    },
     sortButton: {
       fontSize: "1.4vw",
       fontWeight: 500,

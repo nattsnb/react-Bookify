@@ -19,3 +19,7 @@
 .menuListBox {
   height: 3.66vw;
 }
+
+.hiddenText {
+  visibility: hidden;
+}
