@@ -1,6 +1,7 @@
 import styles from "./paginatedList.module.css";
 import React, { useState } from "react";
 import { Pagination, Box, Card, Typography } from "@mui/material";
+import { useAllVenues } from "./usePaginatedList.js";
 
 const items = Array.from({ length: 100 }, (_, i) => `Item ${i + 1}`); // Example items
 
@@ -10,6 +11,9 @@ export const PaginatedList = ({ numberOfCards }) => {
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const displayedItems = items.slice(startIndex, endIndex);
+
+  const { venues, isLoading } = useAllVenues();
+  console.log(venues);
 
   const handleChange = (event, value) => {
     setPage(value);
