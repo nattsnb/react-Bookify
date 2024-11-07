@@ -14,7 +14,6 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  z-index: 1;
   background-image: var(--background-url);
 }
 
@@ -29,6 +28,39 @@
   width: 2.22vw;
   height: 2.22vw;
   background-color: black;
-  position: relative;
-  z-index: 2;
+  opacity: 0.63;
+  position: absolute;
+  top: 0;
+  border-radius: 0 0 10px 0;
+}
+
+.nameBox {
+  height: 2.22vw;
+  width: 11.38vw;
+  background-color: black;
+  opacity: 0.63;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 20px;
+}
+
+.infoBox {
+  height: 4.86vw;
+  width: 9.72vw;
+  background-color: black;
+  opacity: 0.63;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 20px 0 0;
+}
+
+.arrowIcon {
+  font-size: 2.99vw;
+  color: var(--background-gray);
+  text-shadow: 3px 3px 15px black;
+  position: absolute;
+  right: 0.5vw;
+  top: 3.3vw;
 }

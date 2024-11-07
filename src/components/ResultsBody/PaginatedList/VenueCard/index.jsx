@@ -9,7 +9,9 @@ export function VenueCard({ venue, backgroundUrl }) {
       >
         `<div className={styles.heartBox}></div>
         <div className={styles.nameBox}></div>
-        <div className={styles.arrowIcon}></div>
+        <div className={styles.arrowIcon}>
+          <i className={"fas fa-angle-right"}></i>
+        </div>
         <div className={styles.infoBox}>
           <div className={styles.pricing}></div>
           <div className={styles.localization}></div>
