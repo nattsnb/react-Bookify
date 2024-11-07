@@ -36,14 +36,18 @@
 
 .nameBox {
   height: 2.22vw;
-  width: 11.38vw;
+  width: fit-content;
   background-color: black;
   opacity: 0.63;
   position: absolute;
   top: 0;
   right: 0;
   border-radius: 0 0 0 20px;
+  padding: 0.3vw 1.11vw 0.3vw 2.02vw;
+  display:inline-block;
+  text-transform: capitalize;
 }
+
 
 .infoBox {
   height: 4.86vw;
@@ -54,6 +58,7 @@
   bottom: 0;
   left: 0;
   border-radius: 0 20px 0 0;
+  padding: 0.3vw 1vw 0.3vw 1vw;
 }
 
 .arrowIcon {
@@ -63,4 +68,9 @@
   position: absolute;
   right: 0.5vw;
   top: 3.3vw;
+}
+
+.localization{
+  display: flex;
+  flex-direction: row;
 }
