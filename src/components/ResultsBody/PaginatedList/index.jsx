@@ -1,7 +1,8 @@
 import styles from "./paginatedList.module.css";
 import React, { useState, useEffect } from "react";
 import { Pagination, Box, Card, Typography } from "@mui/material";
-import { useAllVenues } from "./usePaginatedList.js"; // Assuming this hook fetches venues
+import { useAllVenues } from "./usePaginatedList.js";
+import { VenueCard } from "./VenueCard/index.jsx";
 
 export const PaginatedList = ({ numberOfCards }) => {
   const itemsPerPage = numberOfCards;
@@ -28,9 +29,11 @@ export const PaginatedList = ({ numberOfCards }) => {
         {displayedItems.length > 0 ? (
           displayedItems.map((venue, index) => (
             <Box key={index} className={styles.cardContainer}>
-              <Card className={styles.card}>
-                <Typography variant="body1">{venue.name}</Typography>
-              </Card>
+              <VenueCard
+                backgroundUrl={venue.coverPhoto}
+                venue={venue}
+                className={styles.card}
+              ></VenueCard>
             </Box>
           ))
         ) : (
