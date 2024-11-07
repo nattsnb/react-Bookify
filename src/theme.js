@@ -61,8 +61,13 @@ const theme = createTheme({
       textShadow: "1px 2px 4px rgba(0, 0, 0, 0.6)",
     },
     boldOnCard: {
-      fontSize: "1.2vw",
+      fontSize: "1.1vw",
       fontWeight: 500,
+      color: "#FFFFFF",
+    },
+    thinOnCard: {
+      fontSize: "1.1vw",
+      fontWeight: 300,
       color: "#FFFFFF",
     },
     confirmSearchButton: {

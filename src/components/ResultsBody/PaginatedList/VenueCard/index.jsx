@@ -10,19 +10,23 @@ export function VenueCard({ venue, backgroundUrl }) {
       >
         `<div className={styles.heartBox}></div>
         <div className={styles.nameBox}>
-            <Typography variant="boldOnCard">{venue.name}</Typography>
+          <Typography variant="boldOnCard">{venue.name}</Typography>
         </div>
         <div className={styles.arrowIcon}>
           <i className={"fas fa-angle-right"}></i>
         </div>
         <div className={styles.infoBox}>
           <div className={styles.pricing}>
-              <Typography variant="boldOnCard">{venue.pricePerNightInEURCent} zl / doba</Typography>
+            <Typography variant="boldOnCard">666 zl / doba</Typography>
           </div>
           <div className={styles.localization}>
-              <div><i className={"fas fa-map-marker-alt"}></i>
-              </div>
-              <div><Typography>{venue.location.city}</Typography></div>
+            <div></div>
+            <div>
+              <Typography variant="thinOnCard">
+                <i className={"fas fa-map-marker-alt"}></i>
+                {venue.location.city}
+              </Typography>
+            </div>
           </div>
         </div>
       </div>
