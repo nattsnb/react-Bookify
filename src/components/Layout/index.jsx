@@ -2,7 +2,7 @@ import { NavBar } from "../NavBar/index.jsx";
 import { Footer } from "../Footer/index.jsx";
 import styles from "./layOut.module.css";
 
-export function LayOut({ children }) {
+export function Layout({ children }) {
   return (
     <div className="container">
       <div className="layout">

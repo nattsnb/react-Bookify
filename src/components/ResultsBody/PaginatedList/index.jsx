@@ -33,15 +33,13 @@ export const PaginatedList = ({ numberOfCards }) => {
                 backgroundUrl={venue.coverPhoto}
                 venue={venue}
                 className={styles.card}
-              ></VenueCard>
+              />
             </Box>
           ))
         ) : (
           <Typography>No venues found</Typography>
         )}
       </Box>
-
-      {/* Pagination */}
       <Pagination
         className={styles.pagination}
         count={Math.ceil(venues.length / itemsPerPage)} // Use venues.length safely

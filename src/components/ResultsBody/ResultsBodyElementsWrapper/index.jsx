@@ -1,4 +1,4 @@
-import styles from "./wrapper.module.css";
+import styles from "./resultsBodyElementsWrapper.module.css";
 import {
   Autocomplete,
   Box,
@@ -12,7 +12,7 @@ import { PaginatedList } from "../PaginatedList/index.jsx";
 import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
 
-export function Wrapper({ arrayOfSMLinks }) {
+export function ResultsBodyElementsWrapper({ arrayOfSMLinks }) {
   const arrayOfPaginationSettings = [6, 18, 36];
   const [numberOfCards, setNumberOfCards] = useState(6);
 
