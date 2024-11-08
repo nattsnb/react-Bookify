@@ -34,15 +34,14 @@ export function ResultsBodyElementsWrapper({ arrayOfSMLinks }) {
                 onChange={handleNumberOfCardsChange}
                 className={styles.textField}
                 variant="outlined"
-                SelectProps={{ IconComponent: () => null }}
                 sx={{
                   "& .MuiOutlinedInput-input": {
-                    padding: "0 !important", // Usunięcie paddingu
+                    padding: "0 !important",
                     display: "flex",
                     alignItems: "center",
                   },
                   "& .MuiSelect-select": {
-                    padding: "0 !important", // Usunięcie paddingu
+                    padding: "0 !important",
                     display: "flex",
                     alignItems: "center",
                   },

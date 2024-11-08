@@ -1,14 +1,14 @@
 import styles from "./paginatedList.module.css";
 import React, { useState, useEffect } from "react";
 import { Pagination, Box, Card, Typography } from "@mui/material";
-import { useAllVenues } from "./usePaginatedList.js";
+import { usePaginatedList } from "./usePaginatedList.js";
 import { VenueCard } from "./VenueCard/index.jsx";
 
 export const PaginatedList = ({ numberOfCards }) => {
   const itemsPerPage = numberOfCards;
   const [page, setPage] = useState(1);
 
-  const { venues, isLoading } = useAllVenues();
+  const { venues, isLoading } = usePaginatedList();
 
   if (isLoading) {
     return <Typography>Loading...</Typography>;

@@ -4,8 +4,8 @@ import styles from "./layOut.module.css";
 
 export function Layout({ children }) {
   return (
-    <div className="container">
-      <div className="layout">
+    <div className={styles.container}>
+      <div className={styles.layout}>
         <NavBar />
         <div className={styles.page}>{children}</div>
         <Footer />

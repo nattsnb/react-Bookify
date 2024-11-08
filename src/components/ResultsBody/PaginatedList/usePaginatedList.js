@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { api } from "../../../shared/api.js";
 
-export const useAllVenues = () => {
+export const usePaginatedList = () => {
   const [venues, setVenues] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
