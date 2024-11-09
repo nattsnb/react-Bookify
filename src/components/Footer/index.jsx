@@ -2,6 +2,7 @@ import styles from "./footer.module.css";
 import { Divider, Link } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { SMLinks } from "../SMLinks/index.jsx";
+import { PageWidthContainer } from "../styles/pageWidthContainer.js";
 
 const socialMediaLinks = [
   { id: 0, address: "https://www.facebook.com", icon: "fa fa-facebook" },
@@ -11,27 +12,29 @@ const socialMediaLinks = [
 ];
 export function Footer() {
   return (
-    <div className={styles.footer}>
-      <div className={styles.topLinksBar}>
-        <Link href={"/"} variant="link" className={styles.topLink}>
-          <Typography variant="link">contact</Typography>
-        </Link>
-        <Link href={"/"} variant="link" className={styles.topLink}>
-          assistance
-        </Link>
-        <Link href={"/"} variant="link" className={styles.topLink}>
-          about us
-        </Link>
+    <PageWidthContainer>
+      <div className={styles.footer}>
+        <div className={styles.topLinksBar}>
+          <Link href={"/"} variant="link" className={styles.topLink}>
+            <Typography variant="link">contact</Typography>
+          </Link>
+          <Link href={"/"} variant="link" className={styles.topLink}>
+            assistance
+          </Link>
+          <Link href={"/"} variant="link" className={styles.topLink}>
+            about us
+          </Link>
+        </div>
+        <Divider className={styles.divider} />
+        <div className={styles.message}>
+          <div>Feel free to contact us in case of any problems and doubts.</div>
+          <div>We are there for you.</div>
+        </div>
+        <SMLinks
+          links={socialMediaLinks}
+          className={styles.bottomLinks}
+        ></SMLinks>
       </div>
-      <Divider className={styles.divider} />
-      <div className={styles.message}>
-        <div>Feel free to contact us in case of any problems and doubts.</div>
-        <div>We are there for you.</div>
-      </div>
-      <SMLinks
-        links={socialMediaLinks}
-        className={styles.bottomLinks}
-      ></SMLinks>
-    </div>
+    </PageWidthContainer>
   );
 }

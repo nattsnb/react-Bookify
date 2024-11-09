@@ -1,8 +1,8 @@
 .wrapper {
 }
 .toolbar {
-  height: 2.77vw;
-  margin-bottom: 1.33vw;
+  height: 35px;
+  margin-bottom: 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,15 +17,15 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding-left: 1vw;
+  padding-left: 5px;
 }
 
 .textField {
-  width: 5.55vw;
+  width: 50px;
   color: var(--primary-main);
 }
 
 .textFieldBox {
-  margin-right: 1.33vw;
-  margin-left: 1.33vw;
+  margin-right: 30px;
+  margin-left: 30px;
 }

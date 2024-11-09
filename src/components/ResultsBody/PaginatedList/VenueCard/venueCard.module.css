@@ -25,8 +25,8 @@
 }
 
 .heartBox {
-  width: 2.22vw;
-  height: 2.22vw;
+  width: 40px;
+  height: 40px;
   background-color: black;
   opacity: 0.63;
   position: absolute;
@@ -35,7 +35,7 @@
 }
 
 .nameBox {
-  height: 2.22vw;
+  height: 40px;
   width: fit-content;
   background-color: black;
   opacity: 0.63;
@@ -43,25 +43,24 @@
   top: 0;
   right: 0;
   border-radius: 0 0 0 20px;
-  padding: 0.3vw 1.11vw 0.3vw 2.02vw;
+  padding: 3px 11px 3px 8px;
   display: inline-block;
   text-transform: capitalize;
 }
 
 .infoBox {
-  height: 4.86vw;
-  width: 9.72vw;
+  height: 40px;
+  width: 80px;
   background-color: black;
   opacity: 0.63;
   position: absolute;
   bottom: 0;
   left: 0;
   border-radius: 0 20px 0 0;
-  padding: 0.3vw 1vw 0.3vw 1vw;
+  padding: 3px 6px;
 }
 
 .arrowIcon {
-  font-size: 2.99vw;
   color: var(--background-gray);
   text-shadow: 3px 3px 15px black;
   position: absolute;

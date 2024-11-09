@@ -17,42 +17,42 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: "Poppins",
+    fontSize: 14,
     h1: {
-      fontSize: "2.8vw",
+      fontSize: 26,
       fontWeight: 600,
       textAlign: "right",
       marginTop: "50px",
       marginRight: "50px",
     },
     homeLink: {
-      fontSize: "2.8vw",
+      fontSize: 25,
       fontWeight: 100,
       textTransform: "uppercase",
     },
     link: {
-      fontSize: "1.2vw",
       fontWeight: 400,
+      padding: "0 20px",
     },
     boldLink: {
-      fontSize: "1.2vw",
       fontWeight: 600,
+      color: "#67AA92",
+      padding: "0 20px",
     },
     filterTitle: {
       textTransform: "uppercase",
-      fontSize: "1.6vw",
+      fontSize: 20,
       fontWeight: 400,
     },
     sortButton: {
-      fontSize: "1.4vw",
       fontWeight: 500,
       color: "#67AA92",
       textTransform: "none",
     },
     landingPageLink: {
-      fontSize: "1.4vw",
       fontWeight: 600,
       color: "#67AA92",
-      marginTop: "1.4vw",
+      marginTop: "20px",
     },
     aboutUsLink: {
       fontWeight: 400,
@@ -63,17 +63,14 @@ const theme = createTheme({
       textShadow: "1px 2px 4px rgba(0, 0, 0, 0.6)",
     },
     boldOnCard: {
-      fontSize: "1.1vw",
       fontWeight: 500,
       color: "#FFFFFF",
     },
     thinOnCard: {
-      fontSize: "1.1vw",
       fontWeight: 300,
       color: "#FFFFFF",
     },
     confirmSearchButton: {
-      fontSize: "1.2vw",
       fontWeight: 500,
       color: "#FFFFFF",
       textTransform: "none",
@@ -106,17 +103,15 @@ const theme = createTheme({
     MuiListItemText: {
       styleOverrides: {
         primary: {
-          fontSize: "1.2vw",
-          paddingLeft: "1.3vw",
-          paddingTop: "1.2vw",
-          paddingBottom: "1.2vw",
+          paddingLeft: "20px",
+          paddingTop: "20xp",
+          paddingBottom: "29px",
         },
       },
     },
     MuiListItemIcon: {
       styleOverrides: {
         primary: {
-          fontSize: "8vw",
           color: "#818181",
         },
       },
@@ -124,8 +119,8 @@ const theme = createTheme({
     MuiTextField: {
       styleOverrides: {
         root: {
-          width: "2.77vw",
-          height: "2.77vw",
+          width: "40px",
+          height: "40px",
           "& .MuiInputBase-root": {
             width: "100%",
             height: "100%",

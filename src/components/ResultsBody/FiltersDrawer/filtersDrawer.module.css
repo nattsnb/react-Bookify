@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   min-width: 282px;
-  width: 19.58vw;
+  width: 40px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,12 +12,12 @@
 
 .wrapper {
   background-color: var(--backgroung-gray);
-  box-shadow: 0 0 0.4vw var(--secondary-light);
+  box-shadow: 0 0 3px var(--secondary-light);
   height: 100%;
 }
 
 .menuListBox {
-  height: 3.66vw;
+  height: 40px;
 }
 
 .hiddenText {

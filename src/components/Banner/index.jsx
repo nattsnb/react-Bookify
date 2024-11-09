@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 import { SearchBar } from "./SearchBar/index.jsx";
 import { LandingPageLink } from "./LandingPageLink/index.jsx";
 import { SearchButton } from "./SearchButton/index.jsx";
-import { LayeredComponent } from "../styles/layeredComponent.styled.js";
-import { GridElement } from "../styles/gridElement.styled.js";
+import { PageWidthContainer } from "../styles/pageWidthContainer.js";
+import { Divider } from "@mui/material";
 
 export function Banner({ size }) {
   let bannerHeight = 0;
@@ -20,26 +20,16 @@ export function Banner({ size }) {
   }
 
   return (
-    <VerticalContainer>
-      <LayeredComponent>
-        <GridElement>
-          <img src={logoImage} alt={"logoImage"} />
-        </GridElement>
-        <GridElement>
-          <VerticalContainer>
-            <div>
-              <img src={vectorImage} alt={"logoImage"} />
-            </div>
-            <Typography variant="h1">
-              Find your place and experience it together.
-            </Typography>
-            <SearchBar></SearchBar>
-            <LandingPageLink></LandingPageLink>
-            <SearchButton></SearchButton>
-          </VerticalContainer>
-        </GridElement>
-      </LayeredComponent>
-      <div></div>
-    </VerticalContainer>
+    <PageWidthContainer>
+      <VerticalContainer>
+        <Typography variant="h1">
+          Find your place and experience it together.
+        </Typography>
+        <SearchBar></SearchBar>
+        <LandingPageLink></LandingPageLink>
+        <SearchButton></SearchButton>
+      </VerticalContainer>
+      <Divider></Divider>
+    </PageWidthContainer>
   );
 }
