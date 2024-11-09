@@ -19,14 +19,14 @@ const theme = createTheme({
     fontFamily: "Poppins",
     fontSize: 14,
     h1: {
-      fontSize: 26,
+      fontSize: 36,
       fontWeight: 600,
       textAlign: "right",
-      marginTop: "50px",
+      marginTop: "250px",
       marginRight: "50px",
     },
     homeLink: {
-      fontSize: 25,
+      fontSize: 35,
       fontWeight: 100,
       textTransform: "uppercase",
     },
@@ -78,6 +78,14 @@ const theme = createTheme({
   },
   spacing: 8,
   components: {
+    MuiDivider: {
+      styleOverrides: {
+        root: {
+          paddingTop: "10px",
+          paddingBottom: "2px",
+        },
+      },
+    },
     MuiLink: {
       styleOverrides: {
         root: {

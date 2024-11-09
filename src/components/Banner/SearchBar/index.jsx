@@ -3,6 +3,8 @@ import { Search } from "@mui/icons-material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
+import { HorizontalContainerCenter } from "../../styles/horizontalContainerCenter.styled.js";
+import { PageWidthContainer } from "../../styles/pageWidthContainer.js";
 
 const StyledTextField = ({
   placeholder,
@@ -81,16 +83,18 @@ const textFieldsDataArray = [
 
 export function SearchBar() {
   return (
-    <div>
-      {textFieldsDataArray.map((dataEntry) => (
-        <StyledTextField
-          key={dataEntry.id}
-          placeholder={dataEntry.placeholder}
-          icon={dataEntry.icon}
-          endAdornmentClass={dataEntry.endAdornmentClass}
-          placeholderAlign={dataEntry.placeholderAlign}
-        />
-      ))}
-    </div>
+    <PageWidthContainer>
+      <HorizontalContainerCenter>
+        {textFieldsDataArray.map((dataEntry) => (
+          <StyledTextField
+            key={dataEntry.id}
+            placeholder={dataEntry.placeholder}
+            icon={dataEntry.icon}
+            endAdornmentClass={dataEntry.endAdornmentClass}
+            placeholderAlign={dataEntry.placeholderAlign}
+          />
+        ))}
+      </HorizontalContainerCenter>
+    </PageWidthContainer>
   );
 }

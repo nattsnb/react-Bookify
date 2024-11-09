@@ -5,4 +5,5 @@ export const VerticalContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 0;
+  align-items: center;
 `;

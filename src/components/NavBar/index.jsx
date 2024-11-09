@@ -1,4 +1,3 @@
-import styles from "./navBar.module.css";
 import Typography from "@mui/material/Typography";
 import { Link } from "@mui/material";
 import { PageWidthContainer } from "../styles/pageWidthContainer.js";

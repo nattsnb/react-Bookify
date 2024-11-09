@@ -25,7 +25,7 @@ export function Footer() {
             about us
           </Link>
         </div>
-        <Divider className={styles.divider} />
+        <Divider variant="dark" />
         <div className={styles.message}>
           <div>Feel free to contact us in case of any problems and doubts.</div>
           <div>We are there for you.</div>
