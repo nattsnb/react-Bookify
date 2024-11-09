@@ -21,6 +21,8 @@ const theme = createTheme({
       fontSize: "2.8vw",
       fontWeight: 600,
       textAlign: "right",
+      marginTop: "50px",
+      marginRight: "50px",
     },
     homeLink: {
       fontSize: "2.8vw",
