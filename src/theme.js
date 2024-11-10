@@ -53,6 +53,7 @@ const theme = createTheme({
       fontWeight: 600,
       color: "#67AA92",
       marginTop: "20px",
+      marginBottom: "40px",
     },
     aboutUsLink: {
       fontWeight: 400,
@@ -98,6 +99,7 @@ const theme = createTheme({
       styleOverrides: {
         contained: {
           borderRadius: "20px",
+          marginTop: "45px",
         },
       },
     },

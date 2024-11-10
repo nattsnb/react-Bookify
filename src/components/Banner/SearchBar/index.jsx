@@ -29,6 +29,8 @@ const StyledTextField = ({
       sx={{
         width: "220px",
         height: "48px",
+        marginTop: "80px",
+        marginBottom: "30px",
         padding: 0,
         paddingLeft: "5px",
         paddingRight: "5px",
