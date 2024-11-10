@@ -8,7 +8,9 @@ import { LandingPageLink } from "./LandingPageLink/index.jsx";
 import { SearchButton } from "./SearchButton/index.jsx";
 import { PageWidthContainer } from "../styles/pageWidthContainer.js";
 import { Divider } from "@mui/material";
-import { BannerContainer } from "../styles/bannerContainer.styled.js";
+import { StyledBannerContainer } from "../styles/bannerContainer.styled.js";
+import { StyledBackgroundTopImage } from "./Banner.styled.jsx";
+import { StyledBackgroundBottomImage } from "./Banner.styled.jsx";
 
 export function Banner({ size }) {
   let bannerHeight = 0;
@@ -21,19 +23,22 @@ export function Banner({ size }) {
   }
 
   return (
-    <PageWidthContainer>
-      <BannerContainer>
-        <Typography variant="h1">
-          Find your place and experience it together.
-        </Typography>
-        <VerticalContainer>
-          <SearchBar></SearchBar>
-          <LandingPageLink></LandingPageLink>
-          <SearchButton></SearchButton>
-        </VerticalContainer>
-      </BannerContainer>
+    <div>
+      <StyledBannerContainer>
+        <StyledBackgroundTopImage>
+          <Typography variant="h1">
+            Find your place and experience it together.
+          </Typography>
+          <VerticalContainer>
+            <SearchBar></SearchBar>
+            <LandingPageLink></LandingPageLink>
+            <SearchButton></SearchButton>
+          </VerticalContainer>
+        </StyledBackgroundTopImage>
+        <StyledBackgroundBottomImage />
+      </StyledBannerContainer>
 
       <Divider></Divider>
-    </PageWidthContainer>
+    </div>
   );
 }

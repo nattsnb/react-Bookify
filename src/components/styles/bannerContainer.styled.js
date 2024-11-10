@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import gradientImage from "../../images/gradient.png";
 
-export const BannerContainer = styled.div`
+export const StyledBannerContainer = styled.div`
   background-image: url(${gradientImage});
   max-width: 1440px;
   width: 100%;
