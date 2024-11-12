@@ -7,7 +7,7 @@ export const StyledSMLinks = styled.i`
 `;
 
 export const StyledFooterLink = styled(Link)`
-  margin-right: 80vw;
-  margin-left: 80vw;
+  margin-right: 80px;
+  margin-left: 80px;
   color: var(--secondary-main);
 `;

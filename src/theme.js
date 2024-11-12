@@ -32,6 +32,10 @@ const theme = createTheme({
     },
     link: {
       fontWeight: 400,
+      padding: "10px 60px",
+    },
+    iconLink: {
+      fontWeight: 400,
       padding: "50px 80px",
     },
     boldLink: {

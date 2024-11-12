@@ -19,12 +19,12 @@ export function Footer() {
       <VerticalContainer>
         <HorizontalContainerCenter>
           <StyledFooterLink href={"/"} variant="link">
-            <Typography variant="link">contact</Typography>
+            <Typography variant="iconLink">contact</Typography>
           </StyledFooterLink>
-          <StyledFooterLink href={"/"} variant="link">
+          <StyledFooterLink href={"/"} variant="iconLink">
             assistance
           </StyledFooterLink>
-          <StyledFooterLink href={"/"} variant="link">
+          <StyledFooterLink href={"/"} variant="iconLink">
             about us
           </StyledFooterLink>
         </HorizontalContainerCenter>
