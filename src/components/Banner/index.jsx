@@ -23,7 +23,7 @@ export function Banner() {
         </StyledBannerContentContainer>
       </StyledBannerContainer>
 
-      <Divider></Divider>
+      <Divider variant="light"></Divider>
     </div>
   );
 }

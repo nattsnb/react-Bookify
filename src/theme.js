@@ -32,7 +32,7 @@ const theme = createTheme({
     },
     link: {
       fontWeight: 400,
-      padding: "0 20px",
+      padding: "50px 80px",
     },
     boldLink: {
       fontWeight: 600,
@@ -80,10 +80,24 @@ const theme = createTheme({
     MuiDivider: {
       styleOverrides: {
         root: {
-          paddingTop: "10px",
-          paddingBottom: "2px",
+          marginTop: "12px",
+          width: "100%",
         },
       },
+      variants: [
+        {
+          props: { variant: "light" },
+          style: {
+            backgroundColor: "#BBBBBB",
+          },
+        },
+        {
+          props: { variant: "dark" },
+          style: {
+            backgroundColor: "#595959",
+          },
+        },
+      ],
     },
     MuiLink: {
       styleOverrides: {

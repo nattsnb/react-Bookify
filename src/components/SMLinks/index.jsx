@@ -1,14 +1,15 @@
-import styles from "./sMLinks.module.css";
 import { Link } from "@mui/material";
+import { StyledSMLinks } from "./SMLinks.styled.jsx";
+import { HorizontalContainerCenter } from "../../shared/styledComponents/horizontalContainerCenter.styled.js";
 
 export function SMLinks({ links }) {
   return (
-    <div className={styles.sMLinks}>
+    <HorizontalContainerCenter>
       {links.map((link) => (
         <Link href={link.address} key={link.id}>
-          <i className={link.icon}></i>
+          <StyledSMLinks className={link.icon}></StyledSMLinks>
         </Link>
       ))}
-    </div>
+    </HorizontalContainerCenter>
   );
 }
