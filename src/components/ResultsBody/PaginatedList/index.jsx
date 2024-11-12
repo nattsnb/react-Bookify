@@ -7,7 +7,7 @@ import {
   CardsWrapper,
   ListWrapper,
   StyledPagination,
-} from "./VenueCard/VenueCard.styled.jsx";
+} from "./PaginatedList.styled.jsx";
 
 export const PaginatedList = ({ numberOfCards }) => {
   const itemsPerPage = numberOfCards;
