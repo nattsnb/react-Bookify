@@ -4,7 +4,7 @@ import { SearchBar } from "./SearchBar/index.jsx";
 import { LandingPageLink } from "./LandingPageLink/index.jsx";
 import { SearchButton } from "./SearchButton/index.jsx";
 import { Divider } from "@mui/material";
-import { StyledBannerContainer } from "../styles/bannerContainer.styled.js";
+import { StyledBannerContainer } from "./Banner.styled.jsx";
 import { StyledBannerContentContainer } from "./Banner.styled.jsx";
 
 export function Banner() {
