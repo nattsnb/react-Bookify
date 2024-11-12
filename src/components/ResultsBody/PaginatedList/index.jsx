@@ -34,7 +34,7 @@ export const PaginatedList = ({ numberOfCards }) => {
         {displayedItems.length > 0 ? (
           displayedItems.map((venue, index) => (
             <CardContainer key={index}>
-              <VenueCard backgroundUrl={venue.coverPhoto} venue={venue} />
+              <VenueCard backgroundurl={venue.coverPhoto} venue={venue} />
             </CardContainer>
           ))
         ) : (

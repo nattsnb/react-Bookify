@@ -73,6 +73,12 @@ const theme = createTheme({
       fontWeight: 300,
       color: "#FFFFFF",
     },
+    cardCityName: {
+      marginLeft: "10px",
+      fontWeight: 300,
+      color: "#FFFFFF",
+      textTransform: "capitalize",
+    },
     confirmSearchButton: {
       fontWeight: 500,
       color: "#FFFFFF",

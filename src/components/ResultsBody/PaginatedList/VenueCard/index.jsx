@@ -1,39 +1,76 @@
-import styles from "./venueCard.module.css";
 import Typography from "@mui/material/Typography";
+import {
+  VenueCardWrapper,
+  PictureFrame,
+  HeartBox,
+  NameBox,
+  ArrowIcon,
+  PictureBottomInfoBox,
+  Localization,
+  UnderCardInfoBox,
+  UnderCardInfoBoxHalfContainer,
+  StyledMiddlePartBox,
+} from "./VenueCard.styled.jsx";
+import { HorizontalContainerTop } from "../../../../shared/styledComponents/horizontalContainerTop.styled.js";
+import { HorizontalContainerCenter } from "../../../../shared/styledComponents/horizontalContainerCenter.styled.js";
+import { Box } from "@mui/material";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import GradeIcon from "@mui/icons-material/Grade";
+import PeopleIcon from "@mui/icons-material/People";
 
-export function VenueCard({ venue, backgroundUrl }) {
+export function VenueCard({ venue, backgroundurl }) {
   return (
-    <div className={styles.wrapper}>
-      <div
-        className={styles.pictureFrame}
-        style={{ "--background-url": `url(${backgroundUrl})` }}
-      >
-        `<div className={styles.heartBox}></div>
-        <div className={styles.nameBox}>
-          <Typography variant="boldOnCard">{venue.name}</Typography>
-        </div>
-        <div className={styles.arrowIcon}>
-          <i className={"fas fa-angle-right"}></i>
-        </div>
-        <div className={styles.infoBox}>
-          <div className={styles.pricing}>
-            <Typography variant="boldOnCard">666 zl / doba</Typography>
-          </div>
-          <div className={styles.localization}>
-            <div></div>
+    <VenueCardWrapper>
+      <PictureFrame backgroundurl={backgroundurl}>
+        <HorizontalContainerTop>
+          <HeartBox>
+            <Typography variant="boldOnCard">
+              <FavoriteBorderIcon />
+            </Typography>
+          </HeartBox>
+          <NameBox>
+            <Typography variant="boldOnCard">{venue.name}</Typography>
+          </NameBox>
+        </HorizontalContainerTop>
+        <HorizontalContainerCenter>
+          <ArrowIcon>
+            <i className={"fas fa-angle-left"}></i>
+          </ArrowIcon>
+          <ArrowIcon>
+            <i className={"fas fa-angle-right"}></i>
+          </ArrowIcon>
+        </HorizontalContainerCenter>
+        <HorizontalContainerTop>
+          <PictureBottomInfoBox>
             <div>
-              <Typography variant="thinOnCard">
-                <i className={"fas fa-map-marker-alt"}></i>
-                {venue.location.city}
-              </Typography>
+              <Typography variant="boldOnCard">666 zł / doba</Typography>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.infoBar}>
-        <div className={styles.rating}></div>
-        <div className={styles.capacity}></div>
-      </div>
-    </div>
+            <Localization>
+              <div>
+                <Typography variant="thinOnCard">
+                  <i className={"fas fa-map-marker-alt"}></i>
+                </Typography>
+                <Typography variant="cardCityName">
+                  {venue.location.city}
+                </Typography>
+              </div>
+            </Localization>
+          </PictureBottomInfoBox>
+          <Box></Box>
+        </HorizontalContainerTop>
+      </PictureFrame>
+      <UnderCardInfoBox>
+        <UnderCardInfoBoxHalfContainer>
+          <GradeIcon />
+          <StyledMiddlePartBox>rating </StyledMiddlePartBox>
+          <Box>{venue.rating}</Box>
+        </UnderCardInfoBoxHalfContainer>
+        <UnderCardInfoBoxHalfContainer>
+          <PeopleIcon />
+          <StyledMiddlePartBox>capacity </StyledMiddlePartBox>
+          <Box>{venue.capacity}</Box>
+        </UnderCardInfoBoxHalfContainer>
+      </UnderCardInfoBox>
+    </VenueCardWrapper>
   );
 }
