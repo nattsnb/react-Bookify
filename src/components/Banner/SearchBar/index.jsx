@@ -30,7 +30,7 @@ const StyledTextField = ({
         width: "220px",
         height: "48px",
         marginTop: "80px",
-        marginBottom: "30px",
+        marginBottom: "18px",
         padding: 0,
         paddingLeft: "5px",
         paddingRight: "5px",

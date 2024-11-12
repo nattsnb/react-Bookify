@@ -4,9 +4,9 @@ import { PageWidthContainer } from "../../components/styles/pageWidthContainer.j
 
 export function Results() {
   return (
-    <>
+    <PageWidthContainer>
       <Banner size={"m"}></Banner>
       <ResultsBody></ResultsBody>
-    </>
+    </PageWidthContainer>
   );
 }

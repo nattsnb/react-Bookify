@@ -1,5 +1,5 @@
 .toolbar {
-  background-image: url("../../../images/toolbar.png");
+  background-image: url("../../../images/toolbar.svg");
   display: flex;
   flex-direction: row;
   justify-content: space-between;

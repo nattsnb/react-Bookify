@@ -19,3 +19,7 @@ export const StyledBackgroundBottomImage = styled.div`
   position: absolute;
   bottom: 0;
 `;
+
+export const StyledBannerContentContainer = styled.div`
+  margin: 66px;
+`;

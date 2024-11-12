@@ -22,7 +22,7 @@ const theme = createTheme({
       fontSize: 36,
       fontWeight: 600,
       textAlign: "right",
-      marginTop: "250px",
+      marginTop: "133px",
       marginRight: "50px",
     },
     homeLink: {
@@ -52,8 +52,6 @@ const theme = createTheme({
     landingPageLink: {
       fontWeight: 600,
       color: "#67AA92",
-      marginTop: "20px",
-      marginBottom: "40px",
     },
     aboutUsLink: {
       fontWeight: 400,
@@ -99,7 +97,7 @@ const theme = createTheme({
       styleOverrides: {
         contained: {
           borderRadius: "20px",
-          marginTop: "45px",
+          marginTop: "35px",
         },
       },
     },
