@@ -1,15 +1,15 @@
-import styles from "./filtersDrawer.module.css";
 import {
   Button,
   ListItemIcon,
   ListItemText,
   MenuItem,
   MenuList,
-  Toolbar,
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Box } from "@mui/system";
+import { StyledToolbar } from "./FilterDrawer.styled.jsx";
+import { HiddenElement } from "../../styles/hiddenElement.styled.js";
+import { RectangularFrame } from "../../styles/rectangularFrame.styled.js";
 
 export function FiltersDrawer() {
   const arrayOfFilters = [
@@ -20,18 +20,19 @@ export function FiltersDrawer() {
     { id: 4, name: "handicap accessibility" },
   ];
   return (
-    <div className={styles.wrapper}>
-      <Toolbar className={styles.toolbar}>
-        <Typography className={styles.hiddenText}>reset</Typography>
+    <RectangularFrame>
+      <StyledToolbar>
+        <HiddenElement>
+          <Typography>reset</Typography>
+        </HiddenElement>
 
         <Typography variant="filterTitle">filters</Typography>
 
         <Button>
           <Typography variant="sortButton">reset</Typography>
         </Button>
-      </Toolbar>
-      <Box className={styles.menuListBox}></Box>
-      <MenuList className={styles.menuList}>
+      </StyledToolbar>
+      <MenuList>
         {arrayOfFilters.map((filter) => (
           <MenuItem key={filter.id}>
             <ListItemText>{filter.name}</ListItemText>
@@ -41,6 +42,6 @@ export function FiltersDrawer() {
           </MenuItem>
         ))}
       </MenuList>
-    </div>
+    </RectangularFrame>
   );
 }
