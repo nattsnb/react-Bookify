@@ -124,45 +124,6 @@ const theme = createTheme({
         },
       },
     },
-    MuiTextField: {
-      styleOverrides: {
-        root: {
-          width: "40px",
-          height: "40px",
-          "& .MuiInputBase-root": {
-            width: "100%",
-            height: "100%",
-            padding: 0,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            boxSizing: "border-box",
-          },
-          "& .MuiOutlinedInput-root": {
-            width: "100%",
-            height: "100%",
-            padding: 0,
-            boxSizing: "border-box",
-          },
-          "& .MuiSelect-select": {
-            width: "100%",
-            height: "100%",
-            padding: 0,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            textAlign: "center",
-            fontWeight: 600,
-            color: "#67AA92",
-          },
-          "& .MuiSelect-icon": {
-            display: "none",
-          },
-        },
-      },
-    },
   },
 });
 

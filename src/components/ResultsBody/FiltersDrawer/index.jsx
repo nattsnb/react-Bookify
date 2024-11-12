@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { StyledToolbar } from "./FilterDrawer.styled.jsx";
+import { StyledDrawerToolbar } from "../ResultsBody.styled.jsx";
 import { HiddenElement } from "../../styles/hiddenElement.styled.js";
 import { RectangularFrame } from "../../styles/rectangularFrame.styled.js";
 
@@ -21,7 +21,7 @@ export function FiltersDrawer() {
   ];
   return (
     <RectangularFrame>
-      <StyledToolbar>
+      <StyledDrawerToolbar>
         <HiddenElement>
           <Typography>reset</Typography>
         </HiddenElement>
@@ -31,7 +31,7 @@ export function FiltersDrawer() {
         <Button>
           <Typography variant="sortButton">reset</Typography>
         </Button>
-      </StyledToolbar>
+      </StyledDrawerToolbar>
       <MenuList>
         {arrayOfFilters.map((filter) => (
           <MenuItem key={filter.id}>

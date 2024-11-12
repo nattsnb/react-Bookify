@@ -1,29 +1,6 @@
-.wrapper {
-  width: 100%;
-}
-.toolbar {
-  height: 35px;
-  margin-bottom: 8px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .cardsWrapper {
   height: max-content;
   margin-bottom: 6.38vw;
-}
-
-.paginationSettingsWrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding-left: 5px;
-}
-
-.textField {
-  width: 50px;
-  color: var(--primary-main);
 }
 
 .textFieldBox {
