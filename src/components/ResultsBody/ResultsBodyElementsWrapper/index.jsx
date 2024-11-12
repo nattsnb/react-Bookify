@@ -1,9 +1,9 @@
-import styles from "./resultsBodyElementsWrapper.module.css";
-import { Box, Button, MenuItem, TextField } from "@mui/material";
+import { Box, Button, MenuItem } from "@mui/material";
 import { PaginatedList } from "../PaginatedList/index.jsx";
 import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
 import {
+  DisplayNumberWrapper,
   ResultsToolbarDiv,
   StyledResultsBodyElementsWrapper,
   StyledResultsNumberTextFiled,
@@ -23,30 +23,29 @@ export function ResultsBodyElementsWrapper({ arrayOfSMLinks }) {
       <ResultsToolbarDiv>
         <HorizontalContainerCenter>
           <Box>show</Box>
-          <StyledResultsNumberTextFiled
-            id="select-number-of-cards"
-            select
-            value={numberOfCards}
-            onChange={handleNumberOfCardsChange}
-            variant="outlined"
-          >
-            {arrayOfPaginationSettings.map((setting) => (
-              <MenuItem key={setting} value={setting}>
-                {setting}
-              </MenuItem>
-            ))}
-          </StyledResultsNumberTextFiled>
+          <DisplayNumberWrapper>
+            <StyledResultsNumberTextFiled
+              id="select-number-of-cards"
+              select
+              value={numberOfCards}
+              onChange={handleNumberOfCardsChange}
+              variant="outlined"
+            >
+              {arrayOfPaginationSettings.map((setting) => (
+                <MenuItem key={setting} value={setting}>
+                  {setting}
+                </MenuItem>
+              ))}
+            </StyledResultsNumberTextFiled>
+          </DisplayNumberWrapper>
+
           <Box>on the page</Box>
         </HorizontalContainerCenter>
-        <div className={styles.sortButtonWrapper}>
-          <Button>
-            <Typography variant="sortButton">sort</Typography>
-          </Button>
-        </div>
+        <Button>
+          <Typography variant="sortButton">sort</Typography>
+        </Button>
       </ResultsToolbarDiv>
-      <div className={styles.cardsWrapper}>
-        <PaginatedList numberOfCards={numberOfCards}></PaginatedList>
-      </div>
+      <PaginatedList numberOfCards={numberOfCards}></PaginatedList>
     </StyledResultsBodyElementsWrapper>
   );
 }

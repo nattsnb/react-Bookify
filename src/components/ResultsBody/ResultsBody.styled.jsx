@@ -35,7 +35,8 @@ export const StyledResultsNumberTextFiled = styled(TextField)`
     color: var(--primary-main);
     font-weight: 600;
     text-align: center;
-    padding: 0;
+    padding: 13px;
+    margin: 0;
   }
 
   & .MuiOutlinedInput-root {
@@ -46,4 +47,9 @@ export const StyledResultsNumberTextFiled = styled(TextField)`
   & .MuiSelect-icon {
     display: none;
   }
+`;
+
+export const DisplayNumberWrapper = styled.div`
+  margin-right: 13px;
+  margin-left: 13px;
 `;
