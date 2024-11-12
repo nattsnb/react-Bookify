@@ -1,7 +1,7 @@
 import Typography from "@mui/material/Typography";
 import { Link } from "@mui/material";
-import { PageWidthContainer } from "../styles/pageWidthContainer.js";
-import { HorizontalContainerCenter } from "../styles/horizontalContainerCenter.styled.js";
+import { PageWidthContainer } from "../../shared/styledComponents/pageWidthContainer.js";
+import { HorizontalContainerCenter } from "../../shared/styledComponents/horizontalContainerCenter.styled.js";
 
 export function NavBar() {
   return (

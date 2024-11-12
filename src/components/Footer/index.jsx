@@ -2,7 +2,7 @@ import styles from "./footer.module.css";
 import { Divider, Link } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { SMLinks } from "../SMLinks/index.jsx";
-import { PageWidthContainer } from "../styles/pageWidthContainer.js";
+import { PageWidthContainer } from "../../shared/styledComponents/pageWidthContainer.js";
 
 const socialMediaLinks = [
   { id: 0, address: "https://www.facebook.com", icon: "fa fa-facebook" },

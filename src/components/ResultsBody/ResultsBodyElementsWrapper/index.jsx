@@ -8,7 +8,7 @@ import {
   StyledResultsBodyElementsWrapper,
   StyledResultsNumberTextFiled,
 } from "../ResultsBody.styled.jsx";
-import { HorizontalContainerCenter } from "../../styles/horizontalContainerCenter.styled.js";
+import { HorizontalContainerCenter } from "../../../shared/styledComponents/horizontalContainerCenter.styled.js";
 
 export function ResultsBodyElementsWrapper({ arrayOfSMLinks }) {
   const arrayOfPaginationSettings = [6, 18, 36];

@@ -1,4 +1,4 @@
-import { VerticalContainer } from "../styles/verticalContainer.styled.js";
+import { VerticalContainer } from "../../shared/styledComponents/verticalContainer.styled.js";
 import Typography from "@mui/material/Typography";
 import { SearchBar } from "./SearchBar/index.jsx";
 import { LandingPageLink } from "./LandingPageLink/index.jsx";

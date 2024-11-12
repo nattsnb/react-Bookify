@@ -1,8 +1,8 @@
 import { FiltersDrawer } from "./FiltersDrawer/index.jsx";
 import { ResultsBodyElementsWrapper } from "./ResultsBodyElementsWrapper/index.jsx";
-import { PageWidthContainer } from "../styles/pageWidthContainer.js";
-import { HorizontalContainerTop } from "../styles/horizontalContainerTop.styled.js";
-import { BodyContentContainerStyled } from "../styles/bodyContentContainer.styled.js";
+import { PageWidthContainer } from "../../shared/styledComponents/pageWidthContainer.js";
+import { HorizontalContainerTop } from "../../shared/styledComponents/horizontalContainerTop.styled.js";
+import { BodyContentContainerStyled } from "../../shared/styledComponents/bodyContentContainer.styled.js";
 
 export function ResultsBody() {
   return (

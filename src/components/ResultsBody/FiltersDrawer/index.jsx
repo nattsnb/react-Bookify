@@ -8,8 +8,8 @@ import {
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { StyledDrawerToolbar } from "../ResultsBody.styled.jsx";
-import { HiddenElement } from "../../styles/hiddenElement.styled.js";
-import { RectangularFrame } from "../../styles/rectangularFrame.styled.js";
+import { HiddenElement } from "../../../shared/styledComponents/hiddenElement.styled.js";
+import { RectangularFrame } from "../../../shared/styledComponents/rectangularFrame.styled.js";
 
 export function FiltersDrawer() {
   const arrayOfFilters = [

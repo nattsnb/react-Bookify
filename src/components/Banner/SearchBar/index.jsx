@@ -3,8 +3,8 @@ import { Search } from "@mui/icons-material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
-import { HorizontalContainerCenter } from "../../styles/horizontalContainerCenter.styled.js";
-import { PageWidthContainer } from "../../styles/pageWidthContainer.js";
+import { HorizontalContainerCenter } from "../../../shared/styledComponents/horizontalContainerCenter.styled.js";
+import { PageWidthContainer } from "../../../shared/styledComponents/pageWidthContainer.js";
 
 const StyledTextField = ({
   placeholder,
