@@ -1,8 +1,13 @@
-import styles from "./paginatedList.module.css";
 import React, { useState, useEffect } from "react";
-import { Pagination, Box, Card, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { usePaginatedList } from "./usePaginatedList.js";
 import { VenueCard } from "./VenueCard/index.jsx";
+import {
+  CardContainer,
+  CardsWrapper,
+  ListWrapper,
+  StyledPagination,
+} from "./VenueCard/VenueCard.styled.jsx";
 
 export const PaginatedList = ({ numberOfCards }) => {
   const itemsPerPage = numberOfCards;
@@ -24,29 +29,24 @@ export const PaginatedList = ({ numberOfCards }) => {
   };
 
   return (
-    <Box className={styles.wrapper}>
-      <Box className={styles.cardsWrapper}>
+    <ListWrapper>
+      <CardsWrapper>
         {displayedItems.length > 0 ? (
           displayedItems.map((venue, index) => (
-            <Box key={index} className={styles.cardContainer}>
-              <VenueCard
-                backgroundUrl={venue.coverPhoto}
-                venue={venue}
-                className={styles.card}
-              />
-            </Box>
+            <CardContainer key={index}>
+              <VenueCard backgroundUrl={venue.coverPhoto} venue={venue} />
+            </CardContainer>
           ))
         ) : (
           <Typography>No venues found</Typography>
         )}
-      </Box>
-      <Pagination
-        className={styles.pagination}
-        count={Math.ceil(venues.length / itemsPerPage)} // Use venues.length safely
+      </CardsWrapper>
+      <StyledPagination
+        count={Math.ceil(venues.length / itemsPerPage)}
         page={page}
         onChange={handleChange}
         color="primary"
       />
-    </Box>
+    </ListWrapper>
   );
 };
