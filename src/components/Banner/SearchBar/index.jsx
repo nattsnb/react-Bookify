@@ -5,6 +5,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 import { HorizontalContainerCenter } from "../../../shared/styledComponents/horizontalContainerCenter.styled.js";
 import { PageWidthContainer } from "../../../shared/styledComponents/pageWidthContainer.js";
+import { SearchBarInputStyled } from "../../../shared/styledComponents/searchBarInput.styled.js";
 
 const StyledTextField = ({
   placeholder,
@@ -13,7 +14,7 @@ const StyledTextField = ({
   placeholderAlign,
 }) => {
   return (
-    <TextField
+    <SearchBarInputStyled
       variant="outlined"
       placeholder={placeholder}
       InputProps={{
@@ -25,26 +26,6 @@ const StyledTextField = ({
             <AddIcon className={endAdornmentClass} />
           </InputAdornment>
         ),
-      }}
-      sx={{
-        width: "220px",
-        height: "48px",
-        marginTop: "80px",
-        marginBottom: "18px",
-        padding: 0,
-        paddingLeft: "5px",
-        paddingRight: "5px",
-        justifyContent: "center",
-        boxShadow: "2px 2px 2px 1px rgb(0 0 0 / 20%)",
-        backgroundColor: "background.default",
-        borderRadius: "15px",
-        fontSize: "1.2vw",
-        "& input": {
-          textAlign: placeholderAlign, // Dynamically align placeholder
-        },
-        "& .MuiOutlinedInput-notchedOutline": {
-          border: "none", // Remove the border
-        },
       }}
     />
   );
