@@ -12,10 +12,10 @@ import { HorizontalContainerCenter } from "../../../shared/styledComponents/hori
 
 export function ResultsBodyElementsWrapper({ arrayOfSMLinks }) {
   const arrayOfPaginationSettings = [6, 18, 36];
-  const [numberOfCards, setNumberOfCards] = useState(6);
+  const [limit, setLimit] = useState(6);
 
   const handleNumberOfCardsChange = (event) => {
-    setNumberOfCards(event.target.value);
+    setLimit(event.target.value);
   };
 
   return (
@@ -27,7 +27,7 @@ export function ResultsBodyElementsWrapper({ arrayOfSMLinks }) {
             <StyledResultsNumberTextFiled
               id="select-number-of-cards"
               select
-              value={numberOfCards}
+              value={limit}
               onChange={handleNumberOfCardsChange}
               variant="outlined"
             >
@@ -45,7 +45,7 @@ export function ResultsBodyElementsWrapper({ arrayOfSMLinks }) {
           <Typography variant="sortButton">sort</Typography>
         </Button>
       </ResultsToolbarDiv>
-      <PaginatedList numberOfCards={numberOfCards}></PaginatedList>
+      <PaginatedList limit={limit}></PaginatedList>
     </StyledResultsBodyElementsWrapper>
   );
 }

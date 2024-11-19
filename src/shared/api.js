@@ -1,5 +1,5 @@
 const getAllVenues = () => {
-  return fetch(`http://localhost:8080/http://localhost:3000/venues/`, {
+  return fetch(`/http://localhost:3000/venues/`, {
     method: "GET",
   })
     .then((res) => res.json())
@@ -14,4 +14,15 @@ const getVenueDetails = (venueId) => {
     .catch((error) => console.error("Error fetching venue details:", error));
 };
 
-export const api = { getAllVenues, getVenueDetails };
+const getVenuesOnPage = (page, limit) => {
+  return fetch(
+    `http://localhost:3000/venues?_page=${page}&_per_page=${limit}`,
+    {
+      method: "GET",
+    },
+  )
+    .then((res) => res.json())
+    .catch((error) => console.error("Error fetching venues:", error));
+};
+
+export const api = { getAllVenues, getVenueDetails, getVenuesOnPage };

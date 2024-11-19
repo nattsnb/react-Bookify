@@ -9,30 +9,19 @@ import {
   StyledPagination,
 } from "./PaginatedList.styled.jsx";
 
-export const PaginatedList = ({ numberOfCards }) => {
-  const itemsPerPage = numberOfCards;
-  const [page, setPage] = useState(1);
-
-  const { venues, isLoading } = usePaginatedList();
+export const PaginatedList = ({ limit }) => {
+  const { venuesOnPage, isLoading, numberOfAllPages, page, handleChange } =
+    usePaginatedList(limit);
 
   if (isLoading) {
     return <Typography>Loading...</Typography>;
   }
 
-  const startIndex = (page - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-
-  const displayedItems = venues ? venues.slice(startIndex, endIndex) : [];
-
-  const handleChange = (event, value) => {
-    setPage(value);
-  };
-
   return (
     <ListWrapper>
       <CardsWrapper>
-        {displayedItems.length > 0 ? (
-          displayedItems.map((venue, index) => (
+        {limit > 0 ? (
+          venuesOnPage.map((venue, index) => (
             <CardContainer key={index}>
               <VenueCard backgroundurl={venue.coverPhoto} venue={venue} />
             </CardContainer>
@@ -42,7 +31,7 @@ export const PaginatedList = ({ numberOfCards }) => {
         )}
       </CardsWrapper>
       <StyledPagination
-        count={Math.ceil(venues.length / itemsPerPage)}
+        count={numberOfAllPages}
         page={page}
         onChange={handleChange}
         color="primary"
